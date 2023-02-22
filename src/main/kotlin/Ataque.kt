@@ -1,8 +1,8 @@
 import java.lang.Exception
 
-class Ataque(nombre:String, tipo:String, fuerza:Int) {
+class Ataque(nombre:String, Tipo:String, fuerza:Int): tipo(Tipo) {
     var nombre:String=nombre
-    var tipo:String=tipo
+    override var tipo:String=Tipo
     var fuerza:Int=fuerza
         set(value) {
             if(value<0){

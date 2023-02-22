@@ -1,4 +1,4 @@
-class Pokemon(id:Int,nombre:String,vida:Int,tipo:String) {
+class Pokemon(id:Int,nombre:String,vida:Int,Tipo:String): tipo(Tipo) {
     var id:Int = 0
         set(value){
             if(id<=0){
@@ -9,7 +9,7 @@ class Pokemon(id:Int,nombre:String,vida:Int,tipo:String) {
     var nombre:String = ""
     var vida:Int = 0
 
-    var tipo:String=""
+    override var tipo:String=""
     init{
         this.id = id;
         this.nombre=nombre;
