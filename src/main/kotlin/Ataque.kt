@@ -10,6 +10,7 @@ class Ataque(nombre:String, Tipo:String, fuerza:Int): tipo(Tipo) {
                 field=value
             }
         }
+    var ataques = mutableListOf<String>("","","","")
     init {
         this.nombre=nombre
         this.tipo=tipo
