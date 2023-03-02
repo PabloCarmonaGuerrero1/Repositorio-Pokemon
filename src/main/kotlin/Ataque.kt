@@ -1,6 +1,6 @@
 import java.lang.Exception
 
-class Ataque(nombre:String, Tipo:String, fuerza:Int): tipo(Tipo) {
+class Ataque(nombre:String, Tipo:String, fuerza:Int, Tipo2: String): tipo(Tipo, Tipo2) {
     var nombre:String=nombre
     override var tipo:String=Tipo
     var fuerza:Int=fuerza
